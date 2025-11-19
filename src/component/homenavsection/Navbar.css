@@ -1,0 +1,42 @@
+/* .nav {
+  height: 5rem;
+  width: 100vw;
+  max-width: 80rem;
+  margin: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.logo {
+  object-fit: cover;
+  height: 4rem;
+  width: 4rem;
+}
+
+.navmenu {
+  display: flex;
+  gap: 35px;
+  cursor: pointer;
+}
+
+.navlink:hover {
+  border-bottom: 1px dashed #808080;
+  padding: 0.2;
+  color: #808080;
+}*/
+
+/* .navbtn {
+  background-color: #fff;
+  height: 2rem;
+  width: 7rem;
+  padding: 2px;
+  margin: 1rem;
+  color: #000;
+  border-radius: 2rem;
+  text-transform: capitalize;
+} */

@@ -1,0 +1,20 @@
+@import "tailwindcss";
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
+  /* background-color: transparent; */
+}
+
+html,
+body {
+  background: rgba(30, 30, 30, 0.3);
+  color: #fff;
+  /* overflow: hidden; */
+  /* overflow-y: scroll; */
+}
