@@ -20,7 +20,7 @@ function Hero() {
           </h1>
           <p className=" text-shadow-md mt-4 ">
             I am skiled Web Developer with expierences in creating visually
-            appealing and user-friendly websites and Web App.
+            appealing and user-friendly websites and Web App for all purposes
           </p>
 
           <div className=" mt-3 pt-1 flex gap-3 items-center justify-center w-47 m-auto text-black rounded-full bg-white h-7">
