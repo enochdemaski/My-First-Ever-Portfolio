@@ -18,7 +18,7 @@ function Hero() {
           <h1 className="text-2xl">
             A <span className="text-blue-600">Web Developer.</span>{" "}
           </h1>
-          <p className=" text-shadow-md">
+          <p className=" text-shadow-md mt-4">
             I am skiled Web Developer with expierences in creating visually
             appealing and user-friendly websites.
           </p>
