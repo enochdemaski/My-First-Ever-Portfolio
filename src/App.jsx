@@ -6,7 +6,7 @@ import Herosection from "./component/homeherosection/Hero";
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Herosection />
     </>
   );
