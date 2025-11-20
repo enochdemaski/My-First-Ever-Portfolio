@@ -5,14 +5,14 @@ import logo from "../../assets/logo.png";
 function Navbar() {
   return (
     <>
-      <nav className="nav  h-20 w-screen max-w-7xl py-4 px-8 flex items-center justify-between sticky top-0 z-3">
+      <nav className=" block h-20 w-screen max-w-7xl py-4 px-8  items-center justify-between sticky top-0 z-3">
         <img
           src={logo}
           alt="logo"
           className="logo h-20 mt-2 object-cover w-20 border-2 rounded-full"
         />
 
-        <div className="navmenu flex gap-8 cursor-pointer text-gray-900">
+        <div className="  cursor-pointer text-gray-900">
           <a
             href="#home"
             className="navlink one hover:w-20 hover:text-center 
