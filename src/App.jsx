@@ -7,7 +7,7 @@ import Card from "./component/CardComponent/Card";
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Herosection />
       <h1 className=" mt-2 text-black text-5xl capitalize text-center  p-2 border-2 border-t-white">
         my services

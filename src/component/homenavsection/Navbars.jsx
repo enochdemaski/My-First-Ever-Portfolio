@@ -5,7 +5,7 @@ import logo from "../../assets/logo.png";
 function Navbar() {
   return (
     <>
-      <nav className=" ">
+      <nav className=" sticky top-0">
         <img
           src={logo}
           alt="logo"
