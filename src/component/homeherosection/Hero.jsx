@@ -18,39 +18,55 @@ function Hero() {
           <h1 className="text-2xl">
             A <span className="text-blue-600">Web Developer.</span>{" "}
           </h1>
-          <p className=" text-shadow-md  mt-4">
-            I am skiled Web Developer with expierences in creating visually
-            appealing and user-friendly websites and Web App for all purpose. I
-            am skiled Web Developer with expierences in creating visually
-            appealing and user-friendly websites and Web App for all purpose.
+          <p className=" text-shadow-md text-sm  mt-4">
+            Welcome to my creative space! I’m a multidisciplinary digital
+            creator with a passion for building visually engaging and
+            user-focused experiences. Whether I’m developing responsive
+            websites, crafting eye-catching graphics, or editing compelling
+            video stories, my goal is always the same: bring ideas to life with
+            clarity, creativity, and purpose. I love combining clean design,
+            smooth functionality, and thoughtful storytelling to create work
+            that not only looks good but also delivers real impact. Take a look
+            around — I’m excited to share my world with you.
           </p>
-
-          <div className=" mt-3 p-7 flex gap-3 items-center justify-center w-67 m-auto  text-gray-800 rounded-full  h-7">
+          {/* <div className=" mt-3 p-7 flex gap-3 items-center justify-center w-67 m-auto  text-gray-800 rounded-full  h-7">
             <div className="border-3 border-black-500 rounded-full text-3xl p-1">
               {" "}
               <a href="#">
-                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                <img
+                  src="c:\Users\MASKI\Downloads\linkedin-svgrepo-com.svg"
+                  alt="linkedin"
+                />
               </a>
             </div>
             <div className="border-3 border-black-500 rounded-full text-3xl p-1">
               {" "}
               <a href="#">
-                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                <img
+                  src="c:\Users\MASKI\Downloads\linkedin-svgrepo-com.svg"
+                  alt="linkedin"
+                />
               </a>
             </div>
             <div className="border-3 border-black-500 rounded-full text-3xl p-1">
               {" "}
               <a href="#">
-                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                <img
+                  src="c:\Users\MASKI\Downloads\facebook-svgrepo-com.svg"
+                  alt="fb"
+                />
               </a>
             </div>
             <div className="border-3 border-black-500 rounded-full text-3xl p-1">
               {" "}
               <a href="#">
-                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                <img
+                  src="c:\Users\MASKI\Downloads\github-svgrepo-com.svg"
+                  alt="git"
+                />
               </a>
             </div>
-          </div>
+          </div> */}
 
           <button className="flex gap-8 m-auto mt-4 p-2  w-90">
             <a
