@@ -14,9 +14,6 @@ function App() {
       </h1>
       <div>
         <Card />
-        {/* <Card />
-        <Card />
-        <Card /> */}
       </div>
     </>
   );

@@ -8,7 +8,7 @@ function Hero() {
       <div id="hero" className="flex-container  ">
         <div className="ml-5 mt-10 p-5 text-center ">
           <span className=" font-bold text-3xl ">Hello,</span>
-          <h2 className="text-2xl w-89  ">
+          <h2 className="text-2xl w-89 m-auto ">
             I'm{" "}
             <span className="text-blue-600 capitalize font-extrabold">
               {" "}
