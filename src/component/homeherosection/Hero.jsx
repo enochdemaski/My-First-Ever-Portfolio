@@ -92,7 +92,7 @@ function Hero() {
           <img
             src={me}
             alt="me"
-            className="h-90 w-90 m-auto mt-3 object-cover border-4 border-gray-300 rounded-full"
+            className=" animate-bounce h-90 w-90 m-auto mt-3 object-cover border-4 border-gray-300 rounded-full"
           />
         </div>
       </div>
