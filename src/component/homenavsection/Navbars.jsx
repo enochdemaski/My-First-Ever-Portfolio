@@ -63,7 +63,7 @@ function Navbar() {
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
 
-        <div className="menu fixed top-0 rigth-100 w-full leading-[30px] h-100 flex flex-col rounded-2xl px-30 items-center ml-[35%] mt-[80px] z-100 bg-white/30 md:hidden text-black">
+        <div className="menu fixed top-0 rigth-100 w-full leading-[30px] h-screen flex flex-col px-10 py-18 ml-[35%] z-100 bg-white/70 rounded-4xl  md:hidden text-black ">
           <ul>
             <li>
               <a href="#home" className="">
