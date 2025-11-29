@@ -9,12 +9,10 @@ function App() {
     <>
       <Navbar />
       <Herosection />
-      <h1 className=" mt-2 text-black text-5xl capitalize text-center  p-2 border-2 border-t-white">
+      {/* <h1 className=" mt-2 text-black text-5xl capitalize text-center  p-2 border-2 border-t-white">
         my services
-      </h1>
-      <div>
-        <Card />
-      </div>
+      </h1> */}
+      {/* <Card /> */}
     </>
   );
 }
