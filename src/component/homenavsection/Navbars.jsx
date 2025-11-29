@@ -10,7 +10,7 @@ function Navbar() {
   // });
   return (
     <>
-      <nav className=" h-20 sticky top-0 flex md:flex justify-between items-center p-2">
+      <nav className=" h-20 sticky top-0 flex md:flex justify-between items-center p-2 bg-black/50">
         <div>
           <a href="#">
             <img
