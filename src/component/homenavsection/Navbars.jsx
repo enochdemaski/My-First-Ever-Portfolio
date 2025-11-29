@@ -1,12 +1,17 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
+import { useEffect } from "react";
 
 function Navbar() {
-  // const bar = querySelector("bar");
-  // const menu = querySelector("menu");
-  // bar.addEventListener("click", () => {
-  //   menu.classList.toggle("hidden");
+  // useEffect(() => {
+  //   const toggle = document.getElementByClassName(".toggle");
+  //   const menu = document.getElementByClassName(".menu");
+  //   const handleClick = () => {
+  //     menu.classList.toggle("hidden");
+  //   };
+
+  //   toggle.addEventListener("click", handleClick);
   // });
   return (
     <>
@@ -54,32 +59,34 @@ function Navbar() {
           </a>
         </button>
 
-        <button className="bar md:hidden  text-3xl">
+        <button className="toggle md:hidden  text-3xl">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
 
-        <ul className="menu hidden md:hidden flex-col bg-black/70 p-4 text-lg w-70 mt-30">
-          <li>
-            <a href="#home" className="">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#about" className="">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#projects" className="">
-              Projects
-            </a>
-          </li>
-          <li>
-            <a href="#clients" className="">
-              Clients
-            </a>
-          </li>
-        </ul>
+        <div className="menu fixed top-0 rigth-100 w-full leading-[30px] h-100 flex flex-col rounded-2xl px-50 items-center ml-[35%] mt-[80px] z-100 bg-white/30 md:hidden text-black">
+          <ul>
+            <li>
+              <a href="#home" className="">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#projects" className="">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#clients" className="">
+                Clients
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </>
   );
