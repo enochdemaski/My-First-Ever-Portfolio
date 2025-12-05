@@ -6,7 +6,7 @@ import { useEffect } from "react";
 function Navbar() {
   return (
     <>
-      <nav className=" h-20 sticky top-0 z-100  flex md:flex justify-between items-center p-2 bg-white/10">
+      <nav className=" h-20 sticky top-0 z-100  flex md:flex justify-between items-center p-2 bg-black/70">
         <div>
           <a href="#">
             <img
