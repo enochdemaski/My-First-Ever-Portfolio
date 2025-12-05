@@ -68,10 +68,10 @@ function Hero() {
             </div>
           </div> */}
 
-          <button className=" flex justify-center m-auto mt-4 p-4  w-90">
+          <button className=" flex justify-center m-auto mt-4 p-4 rounded-full  w-90 hover:shadow-[0_4px_12px_rgba(0,0,0,0.7)] transition-all duration-300 ease-in-out">
             <a
               href="#"
-              className=" text-black p-3 rounded-l-full w-35  border-l-2 border-r-2 border-black bg-white shadow-[0_0_20px_white]"
+              className=" text-black p-3 rounded-l-full w-35  border-l-2 border-r-2 border-black bg-white shadow-[0_0_20px_white] hover:shadow-[0_4px_12px_rgba(0,0,0,0.7)] transition-all duration-900 ease-in-out"
             >
               {" "}
               <i class="fa fa-envelope-open" aria-hidden="true"></i>
@@ -80,7 +80,7 @@ function Hero() {
 
             <a
               href="#"
-              className="  text-black p-3 rounded-r-full w-35  border-l-2 border-r-2 border-black bg-white shadow-[0_0_20px_white]"
+              className="  text-black p-3 rounded-r-full w-35  border-l-2 border-r-2 border-black bg-white shadow-[0_0_20px_white] hover:shadow-[0_4px_12px_rgba(0,0,0,0.7)] transition-all duration-900 ease-in-out"
             >
               {" "}
               <i class="fa fa-address-book" aria-hidden="true"></i>
