@@ -68,10 +68,10 @@ function Hero() {
             </div>
           </div> */}
 
-          <button className="flex gap-8 m-auto mt-4 p-2  w-90">
+          <button className=" flex justify-center m-auto mt-4 p-4  w-90">
             <a
               href="#"
-              className=" text-black p-3 rounded-4xl w-35  border border-transparent bg-white shadow-[0_0_20px_white]"
+              className=" text-black p-3 rounded-l-full w-35  border-l-2 border-r-2 border-black bg-white shadow-[0_0_20px_white]"
             >
               {" "}
               <i class="fa fa-envelope-open" aria-hidden="true"></i>
@@ -80,9 +80,10 @@ function Hero() {
 
             <a
               href="#"
-              className=" m-auto text-black p-3 rounded-4xl w-35  border border-transparent bg-white shadow-[0_0_20px_white]"
+              className="  text-black p-3 rounded-r-full w-35  border-l-2 border-r-2 border-black bg-white shadow-[0_0_20px_white]"
             >
               {" "}
+              <i class="fa fa-address-book" aria-hidden="true"></i>
               Resume
             </a>
           </button>
