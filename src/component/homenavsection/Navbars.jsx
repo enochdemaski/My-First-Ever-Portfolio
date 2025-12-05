@@ -2,7 +2,6 @@ import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 import { useEffect } from "react";
-import { init } from "emailjs-com";
 
 function Navbar() {
   return (
@@ -51,11 +50,17 @@ function Navbar() {
           </a>
         </button>
 
-        <button className="toggle md:hidden  text-3xl hover:cursor-pointer border-2 border-white rounded-full p-1">
+        <button
+          id="toggles"
+          className="toggle md:hidden  text-3xl hover:cursor-pointer border-2 border-white rounded-full p-1"
+        >
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
 
-        <div className="menu fixed top-0 rigth-100 w-full leading-[35px] h-screen flex flex-col px-10 py-18 ml-[35%] bg-white/60 rounded-4xl  md:hidden text-black hidden">
+        <div
+          id="menus"
+          className="menu fixed top-0 rigth-100 w-full leading-[35px] h-screen flex flex-col px-10 py-18 ml-[35%] bg-white/60 rounded-4xl  md:hidden text-black hidden"
+        >
           <ul>
             <li>
               <a href="#home" className="">
