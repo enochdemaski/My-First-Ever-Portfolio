@@ -6,9 +6,8 @@ export default function Card({ title, name, id }) {
     <div className="cardcontainer shadow-[0_0_20px_white] mt-5 p-1  bg-gray-500 border-2 h-80 rounded-3xl w-90 md:bases-1/2 lg:basis-1/5">
       <div className="child-card-container bg-gray-200 border-b-gray-950 border-2 p-2 h-30 rounded-3xl ">
         <p className="text-black">{id}</p>
-        <h1 className="text-black capitalize text-center">{title}</h1>
         <h2 className="text-black capitalize text-center">{name}</h2>
-
+        <h1 className="text-black capitalize text-center">{title}</h1>
         {/* <p>{text}</p> */}
       </div>
     </div>
