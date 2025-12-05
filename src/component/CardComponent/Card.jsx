@@ -3,7 +3,7 @@ import "./Card.css";
 
 export default function Card({ title, name, id }) {
   return (
-    <div className="cardcontainer shadow-[0_0_20px_white] mt-5  bg-gray-500 h-80 rounded-3xl w-80 md:bases-1/2 lg:basis-1/5">
+    <div className="cardcontainer shadow-[0_0_20px_white] mt-5  bg-gray-500 h-80 rounded-3xl w-90 md:bases-1/2 lg:basis-1/5">
       <div className="child-card-container bg-gray-200 border-b-gray-950 border-2 p-2 h-30 rounded-3xl ">
         <p className="text-black">{id}</p>
         <h1 className="text-black capitalize text-center">{title}</h1>
