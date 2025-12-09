@@ -84,44 +84,42 @@ function Navbar() {
           ></span>
         </button>
 
-        {isMenuOpen && (
-          <div
-            id="menus"
-            className={`menu fixed top-0 rigth-100 w-full leading-[35px] h-screen flex flex-col px-10 py-18 ml-[25%] bg-black/90 border-1 border-white rounded-4xl  text-white transform transition-transform duration-500 ease-in-out ${
-              isMenuOpen ? "translate-x-0" : "translate-x-full"
-            }`}
-          >
-            <ul>
-              <li>
-                <a href="#home" className="">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#projects" className="">
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a href="#clients" className="">
-                  Clients
-                </a>
-              </li>
+        <div
+          id="menus"
+          className={`menu fixed top-0 rigth-100 w-full leading-[35px] h-screen flex flex-col px-10 py-18 ml-[25%] bg-black/90 border-1 border-white rounded-4xl  text-white md:hidden transform transition-transform duration-900 ease-in-out ${
+            isMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <ul>
+            <li>
+              <a href="#home" className="">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#projects" className="">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#clients" className="">
+                Clients
+              </a>
+            </li>
 
-              <li>
-                <a href="#clients" className="">
-                  <i class="fa fa-phone-square" aria-hidden="true"></i>
-                  Contact Me
-                </a>
-              </li>
-            </ul>
-          </div>
-        )}
+            <li>
+              <a href="#clients" className="">
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                Contact Me
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </>
   );
