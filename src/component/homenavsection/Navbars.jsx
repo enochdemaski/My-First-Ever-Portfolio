@@ -1,9 +1,20 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
-import { useEffect } from "react";
+
+import { useState } from "react";
 
 function Navbar() {
+  const mobileNav = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const togglemenu = () => {
+      setIsOpen(!isOpen);
+    };
+  };
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
   return (
     <>
       <nav className=" h-20 sticky top-0 z-100  flex md:flex justify-between items-center p-2 bg-black/70">
@@ -59,7 +70,7 @@ function Navbar() {
 
         <div
           id="menus"
-          className="menu fixed top-0 rigth-100 w-full leading-[35px] h-screen flex flex-col px-10 py-18 ml-[35%] bg-white/60 rounded-4xl  md:hidden text-black hidden"
+          className="menu fixed top-0 rigth-100 w-full leading-[35px] h-screen flex flex-col px-10 py-18 ml-[35%] bg-white/90 rounded-4xl  md:hidden text-black "
         >
           <ul>
             <li>
