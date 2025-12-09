@@ -1,20 +1,15 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
-
 import { useState } from "react";
 
 function Navbar() {
-  const mobileNav = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const togglemenu = () => {
-      setIsOpen(!isOpen);
-    };
+  const togglemenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
+
   return (
     <>
       <nav className=" h-20 sticky top-0 z-100  flex md:flex justify-between items-center p-2 bg-black/70">
@@ -61,47 +56,52 @@ function Navbar() {
           </a>
         </button>
 
+        {/* For mobile menu */}
+
         <button
           id="toggles"
-          className="toggle md:hidden  text-3xl hover:cursor-pointer border-2 border-white rounded-full p-1"
+          onClick={togglemenu}
+          className="toggle md:hidden  text-3xl hover:cursor-pointer border-2 border-white rounded-full p-1 z-100"
         >
-          <i class="fa fa-bars" aria-hidden="true"></i>
+          {isMenuOpen ? `Close` : `Open`}
         </button>
 
-        <div
-          id="menus"
-          className="menu fixed top-0 rigth-100 w-full leading-[35px] h-screen flex flex-col px-10 py-18 ml-[35%] bg-white/90 rounded-4xl  md:hidden text-black "
-        >
-          <ul>
-            <li>
-              <a href="#home" className="">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#clients" className="">
-                Clients
-              </a>
-            </li>
+        {isMenuOpen && (
+          <div
+            id="menus"
+            className="menu fixed top-0 rigth-100 w-full leading-[35px] h-screen flex flex-col px-10 py-18 ml-[35%] bg-white/90 rounded-4xl  sm:hidden text-black"
+          >
+            <ul>
+              <li>
+                <a href="#home" className="">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#projects" className="">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="#clients" className="">
+                  Clients
+                </a>
+              </li>
 
-            <li>
-              <a href="#clients" className="">
-                <i class="fa fa-phone-square" aria-hidden="true"></i>
-                Contact Me
-              </a>
-            </li>
-          </ul>
-        </div>
+              <li>
+                <a href="#clients" className="">
+                  <i class="fa fa-phone-square" aria-hidden="true"></i>
+                  Contact Me
+                </a>
+              </li>
+            </ul>
+          </div>
+        )}
       </nav>
     </>
   );
