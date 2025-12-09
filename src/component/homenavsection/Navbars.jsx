@@ -61,15 +61,35 @@ function Navbar() {
         <button
           id="toggles"
           onClick={togglemenu}
-          className="toggle md:hidden  text-3xl hover:cursor-pointer border-2 border-white rounded-full p-1 z-100"
+          className="toggle md:hidden  text-3xl hover:cursor-pointer p-1 z-100 "
         >
-          {isMenuOpen ? `Close` : `Open`}
+          {/* {isMenuOpen ? `Close` : `Open`} */}
+
+          <span
+            className={`stroke hamburger rounded-full bg-white h-1 w-7 m-1 flex flex-col ${
+              isMenuOpen ? "rotate-45 translate-y-2 " : ""
+            }`}
+          ></span>
+
+          <span
+            className={`stroke hamburger rounded-full bg-white h-1 w-7 m-1 flex flex-col ${
+              isMenuOpen ? "opacity-0" : ""
+            }`}
+          ></span>
+
+          <span
+            className={`stroke hamburger rounded-full bg-white h-1 w-7 m-1 flex flex-col ${
+              isMenuOpen ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          ></span>
         </button>
 
         {isMenuOpen && (
           <div
             id="menus"
-            className="menu fixed top-0 rigth-100 w-full leading-[35px] h-screen flex flex-col px-10 py-18 ml-[35%] bg-white/90 rounded-4xl  sm:hidden text-black"
+            className={`menu fixed top-0 rigth-100 w-full leading-[35px] h-screen flex flex-col px-10 py-18 ml-[25%] bg-black/90 border-1 border-white rounded-4xl  text-white transform transition-transform duration-500 ease-in-out ${
+              isMenuOpen ? "translate-x-0" : "translate-x-full"
+            }`}
           >
             <ul>
               <li>
