@@ -1,14 +1,28 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const menuRef = useRef(null);
   const togglemenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    const clickClose = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", clickClose);
+
+    return () => {
+      document.removeEventListener("mousedown", clickClose);
+    };
+  }, []);
 
   return (
     <>
@@ -64,19 +78,16 @@ function Navbar() {
           className="toggle md:hidden  text-3xl hover:cursor-pointer p-1 z-100 "
         >
           {/* {isMenuOpen ? `Close` : `Open`} */}
-
           <span
             className={`stroke hamburger rounded-full bg-white h-1 w-7 m-1 flex flex-col ${
               isMenuOpen ? "rotate-45 translate-y-2 " : ""
             }`}
           ></span>
-
           <span
             className={`stroke hamburger rounded-full bg-white h-1 w-7 m-1 flex flex-col ${
               isMenuOpen ? "opacity-0" : ""
             }`}
           ></span>
-
           <span
             className={`stroke hamburger rounded-full bg-white h-1 w-7 m-1 flex flex-col ${
               isMenuOpen ? "-rotate-45 -translate-y-2" : ""
